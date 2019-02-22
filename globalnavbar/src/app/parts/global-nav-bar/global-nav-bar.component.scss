@@ -1,0 +1,36 @@
+:host {
+    position: fixed;
+    // by setting 0 to left and right, we can expand the element in full width
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    .mat-toolbar {
+        height: 56px;
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+        background-color: #263238;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 8px 16px;
+        font-size: 14px;
+        .mat-toolbar__flex-spacer {
+            flex: 14;
+        }
+        .mat-toolbar__item {
+            // I haven't set the flex. I want to come near in all of them.
+            padding-right: 8px;
+        }
+        .mat-toolbar__item--right {
+            text-align: right;
+        }
+        .mat-toolbar__item--clickable {
+            cursor: pointer;
+        }
+        .mat-icon {
+            padding-top: 8px;
+        }
+    }
+}
